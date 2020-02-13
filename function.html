@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<form>
+    <p>Input your value 1</p>
+    <input type="text" id="val1">
+    <p>Input your value 2</p>
+    <input type="text" id="val2">
+    <input type="button" onclick="myfunction()" value="Submit">
+</form>
+
+<p id="ans"></p>
+
+<script>
+    // var x = myfunction(5,6);
+    myfunction = () =>{
+        var n1 = document.getElementById('val1').value;
+        var n2 = document.getElementById('val2').value;
+        document.getElementById('ans').innerHTML = n1*n2;
+    }
+    // myfunction(5,6)
+</script>
+</body>
+</html>

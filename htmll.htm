@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>adjust</title>
+        <script>
+            swap = () =>{
+                var num = ['Jan','March','April','June']
+                num.splice(1,2)
+                document.getElementById('result').innerHTML = num;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="result" onclick="swap()"> Click me </p>
+    </body>
+</html>

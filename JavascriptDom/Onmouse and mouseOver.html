@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" style="background-color: #D94A38; width: 120px; height: 20px;padding: 40px">
+    Mouse Over
+</div>
+
+<script>
+    mouseOver = (obj) =>{
+        obj.innerHTML = "Thank you"
+    }
+    mouseOut = (obj) =>{
+        obj.innerHTML = "Mouse over me"
+    }
+</script>
+
+</body>
+</html>

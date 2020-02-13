@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    FindIndex = (str) =>{
+        var a = str.indexOf('fa')
+        if (a >=0 ){
+            document.write('<p>'+ a.toString() + "</p>")
+        }
+    }
+    FindIndex('sifat')
+    var  str = "Please locate where 'locate' occurs!"
+    var pos = str.search('locate')
+    document.getElementById('demo1').innerHTML = "---------> "+pos;
+    document.getElementById('demo1').innerHTML = "-----slice------";
+    var str = "Apple, Banna, Kiwi"
+    var res = str.slice(-12)
+    document.getElementById('demo2').innerHTML = res;
+</script>
+</body>
+</html>

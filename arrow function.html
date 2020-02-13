@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow function</title>
+</head>
+<body>
+<p id="ans"></p>
+<script>
+    var metarials = [
+        "Hydrogen",
+        'Helium',
+        'Lithium',
+        'Berylium'
+    ];
+    // console.log(metarials.map(metarial => metarial))
+    document.getElementById('ans').innerHTML = metarials.map((metarial)=> {
+        return metarial+"-En"
+    })
+</script>
+</body>
+</html>

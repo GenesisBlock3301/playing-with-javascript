@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<form>
+    <p>Enter your Celsius Value:</p>
+    <input type="text" id="cel">
+    <input type="button" id="ferh" onclick="ConvertToFehrenheit()" value="Convert to fehrenheit">
+    <p>Enter you fahrenheite value:</p>
+    <input type="text" id="feh">
+    <input type="button" id="cels" onclick="ConvertToCelsius()" value="Convert to Celsius">
+</form>
+Fehrenheit:
+<p id="fans"></p>
+Celsius:
+<p id="cans"></p>
+
+<script>
+ConvertToCelsius = () =>{
+    var fer = document.getElementById('feh').value;
+    document.getElementById('cans').innerHTML = ((5/9)*(fer-32)).toFixed(2);
+}
+ConvertToFehrenheit = () =>{
+    var cel = document.getElementById('cel').value;
+    document.getElementById('fans').innerHTML = (cel*(9/5) + 32).toFixed(2);
+}
+</script>
+</body>
+</html>

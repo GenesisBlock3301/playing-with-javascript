@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<button onmouseover="DT()">Click here</button>
+<p id="demo"></p>
+    <p onclick="this.innerHTML='You are so cute'">Click me</p>
+<script>
+  DT = () =>{
+      document.getElementById('demo').innerHTML = Date();
+  }
+</script>
+</body>
+</html>

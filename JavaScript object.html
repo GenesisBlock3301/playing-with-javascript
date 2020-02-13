@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="entries"></p>
+<p id="loop"></p>
+<script>
+    var car = {type:"Fiat",model:"500", color:'White'}
+
+    document.getElementById('demo').innerHTML = Object.keys(car);
+    document.getElementById('demo2').innerHTML = Object.values(car);
+    // console.log(Object.entries(car));
+    for (i=0;i<Object.entries(car).length;i++){
+        console.log(Object.entries(car)[i])
+    }
+// looping throught array
+    const  keys = Object.keys(car);
+    for(const  key of keys){
+        document.write(car[key]+"<br>")
+    }
+</script>
+</body>
+</html>

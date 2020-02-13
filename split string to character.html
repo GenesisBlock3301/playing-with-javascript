@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>split string to character</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="enterString">
+            <input type="button" onclick="order()" value="Submit string" id="submitString">
+        </form>
+        <p>show result</p>
+        <span id="r"></span>
+
+        <script>
+            order = () =>{
+                var st = document.getElementById('enterString').value;
+                document.getElementById("r").innerHTML = st.split("").sort().join("");
+            }
+        </script>
+    </body>
+</html>

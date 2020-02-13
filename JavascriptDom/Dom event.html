@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+<body>
+<div id="div" onmouseover="mouseOver()" style="background-color: aqua; width: 300px">
+<p id="h">Click me</p>
+</div>
+
+<script>
+    mouseOver = () =>{
+        // document.getElementById('div').style.backgroundColor = 'black';
+        document.getElementById('h').innerHTML= Date();
+    }
+</script>
+</body>
+</html>
