@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Authors</h1>
+<ul id="authors"></ul>
+<script>
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+    fetch(url, {
+        method: 'POST', ///method type
+        body: JSON.stringify({ ///body of the content
+            title: 'New Pirate Captain',
+            body: "Aren't we excited",
+            userID: 3
+        }),
+        headers: { ///which type data we want pass
+            'Content-type': 'application/json; charset=UTF-8'
+        }
+    }).then((response) => {
+        console.log(response);
+        console.log(response.ok);
+        if (response.ok){
+            return response.json()
+        }
+        return Promise.reject(response)
+    })
+        .then((data) => {
+            console.log(data)
+        }).catch((error)=>{
+            console.log(error)
+    })
+</script>
+</body>
+
+</html>

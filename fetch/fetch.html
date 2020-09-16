@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Authors</h1>
+<ul id="authors"></ul>
+<script>
+    const ul = document.getElementById('authors');
+    const url = 'https://randomuser.me/api/?results=10';
+
+    const creatNode = (element) => {
+        return document.createElement(element);
+    };
+    const append = (parent, ele) => {
+        return parent.appendChild(ele)
+    };
+
+    fetch(url) ///fetch the url of api
+        .then((resp) => resp.json()) ///convert this url resource as a json response.
+        .then((data) => {
+            let authors = data.results;
+            // console.log(authors)
+            return authors.map((author) => {
+                let li = creatNode('li');
+                img = creatNode('img');
+                span = creatNode('span');
+                img.src = author.picture.medium;
+                span.innerHTML = `${author.name.first} ${author.name.first}`
+                append(li, img);
+                append(li, span);
+                append(ul, li)
+            })
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+</script>
+</body>
+
+</html>
