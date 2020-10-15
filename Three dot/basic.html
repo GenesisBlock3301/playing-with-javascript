@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    let line1 = ['Artificail', 'Amature', "Aren't", "All"];
+    // console.log(...line1);
+    let fullSong = ['Broken','bounded',...line1];
+    // console.log(...fullSong);
+
+    const song = (name,artist)=>{
+        console.log("Artist name is "+artist+" Song name is "+name)
+    };
+
+    let details = ["Blackalice","Alphabete,Arbic"];
+    song(...details)
+
+    let number = [9,3,3,4]
+    console.log(Math.min(...number))
+
+</script>
+</body>
+</html>
