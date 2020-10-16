@@ -6,7 +6,18 @@
 </head>
 <body>
 <h1>Local Storage</h1>
+
 <script>
+    // Set username as a key-->
+    window.localStorage.setItem('username','nas12345');
+    window.localStorage.setItem('email','nas@gamil.com');
+    //Show all localStorage Key value.
+    console.log(localStorage);
+    console.log(localStorage.getItem('username'),localStorage.getItem('email'));
+    //show localStorage's first value.
+    console.log(localStorage.key(0));
+    //Remove localStorage item
+    localStorage.removeItem('email')
 
 </script>
 </body>
