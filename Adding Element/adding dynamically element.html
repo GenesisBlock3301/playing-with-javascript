@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function CreateElement (){
+            const pNew = document.createElement('p');
+            const text = document.createTextNode("This is created paragraph");
+            pNew.appendChild(text);
+            document.getElementById('ele').appendChild(pNew);
+        }
+    </script>
+</head>
+<body>
+<div>
+    <div id="ele">
+
+    </div>
+    <button onclick="CreateElement()">Click me</button>
+</div>
+</body>
+</html>

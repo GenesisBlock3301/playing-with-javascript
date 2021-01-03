@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    Operation = () => {
+        // let val = prompt("Enter your number")
+        let val = "6543"
+        console.log(val.split('').reverse().join(''))
+        document.write("Reverse Number: ",val.split('').reverse().join(''),'<br>')
+        document.write("Sort Number: ",val.split('').sort().join(''))
+    };
+    checkVowel=()=>{
+        let val = "sifat";
+        let vowel = 'aeiou';
+        let vC = 0
+        val.split('').map((val)=>{
+            if(vowel.indexOf(val) != -1){
+                vC+=1
+            }
+        })
+        forEach(let v in val.split(''))
+        {
+
+        }
+        document.write("<br>Vowel Number is: ",vC)
+    }
+    Operation()
+    checkVowel()
+</script>
+</body>
+</html>

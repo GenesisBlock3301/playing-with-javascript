@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj = {
+        id:1,
+        name:"Nur Amin Sifat",
+        l:[]
+    }
+    TripleDot = () =>{
+        return {
+            ...obj,
+            l:18
+        }
+    }
+    TripleDot()
+    console.log(obj.l)
+    let array = [1,2,3,4,5]
+    array.filter((val => {
+        if (val !== 3){
+            console.log(val)
+        }
+        else {
+            console.log("Match")
+        }
+    }))
+</script>
+</body>
+</html>
