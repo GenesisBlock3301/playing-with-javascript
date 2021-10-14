@@ -1,0 +1,16 @@
+{
+  "name": "secp256k1-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elliptic": "^6.5.4",
+    "js-sha3": "^0.8.0",
+    "sha256": "^0.2.0"
+  }
+}
