@@ -1,9 +1,0 @@
-{
-    "employee":
-        [
-            {
-                "name":"Vinod",
-                "lastname":"Thapa"
-            }
-        ]
-}
