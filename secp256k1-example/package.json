@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "elliptic": "^6.5.4",
+    "elliptic": "^6.5.7",
     "js-sha3": "^0.8.0",
     "sha256": "^0.2.0"
   }
